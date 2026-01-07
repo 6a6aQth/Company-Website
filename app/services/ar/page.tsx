@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ShootingStars } from "@/components/ui/shooting-stars"
 import { StarsBackground } from "@/components/ui/stars-background"
 
-export default function Web3IntegrationPage() {
+export default function ARExperiencePage() {
   return (
     <div className="relative min-h-screen overflow-hidden">
       {/* Animated backgrounds */}
@@ -18,19 +18,21 @@ export default function Web3IntegrationPage() {
           <div className="container relative z-10">
             <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 items-center">
               <div className="space-y-4">
-                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Web3 Integration</h1>
+                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">AR Experience</h1>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
-                  Transform your business into the decentralized future with blockchain technology, tokenization, and
-                  smart contract solutions designed for security and scalability.
+                  Bring your products and ideas to life with immersive augmented reality experiences, revolutionizing
+                  customer engagement and interactivity.
                 </p>
               </div>
-              <div className="relative h-[300px] sm:h-[400px] lg:h-[500px]">
+              <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/images/web3-integration.jpeg"
-                  alt="Web3 Integration"
+                  src="/images/ar-experience.jpeg"
+                  alt="AR Experience"
                   fill
-                  className="object-cover rounded-lg shadow-xl"
+                  className="object-cover rounded-lg"
+                  priority
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               </div>
             </div>
           </div>
@@ -44,29 +46,9 @@ export default function Web3IntegrationPage() {
               <Card className="border-beam overflow-hidden">
                 <CardHeader className="p-0">
                   <div className="relative h-48">
-                    <Image src="/images/activerse-project.jpeg" alt="Activerse Project" fill className="object-cover" />
-                  </div>
-                </CardHeader>
-                <CardContent className="p-6">
-                  <CardTitle className="mb-2">Activerse</CardTitle>
-                  <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
-                    A phygital Web3 platform connecting real-world sustainable actions to NFT rewards. Users can claim SDG
-                    achievements by scanning QR codes at community events, promoting environmental responsibility through
-                    blockchain technology.
-                  </p>
-                  <Button variant="outline" size="sm" asChild>
-                    <a href="https://activerse.midascreed.com/" target="_blank" rel="noopener noreferrer">
-                      Learn More
-                    </a>
-                  </Button>
-                </CardContent>
-              </Card>
-              <Card className="border-beam overflow-hidden">
-                <CardHeader className="p-0">
-                  <div className="relative h-48">
                     <Image
-                      src="/images/projects/aunamex.png"
-                      alt="Aunamex Project"
+                      src="/images/projects/ar-business-cards.jpeg"
+                      alt="AR Business Cards"
                       fill
                       className="object-cover"
                     />
@@ -74,17 +56,41 @@ export default function Web3IntegrationPage() {
                   </div>
                 </CardHeader>
                 <CardContent className="p-6">
-                  <CardTitle className="mb-2">Aunamex</CardTitle>
+                  <CardTitle className="mb-2">AR Business Cards</CardTitle>
                   <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
-                    A platform that acts as a gateway to blockchain-powered property investment. Access institutional-grade Build-to-Rent assets through tokenized ownership with transparent yields and instant liquidity.
+                    AR business cards embedded with QR codes that launch 3D objects, 3D social media icons and contact
+                    details when scanned.
                   </p>
-                  <Button variant="outline" size="sm" asChild>
-                    <Link href="#" target="_blank" rel="noopener noreferrer">
-                      Learn More
-                    </Link>
+                  <Button variant="outline" size="sm">
+                    Learn More
                   </Button>
                 </CardContent>
               </Card>
+
+              {[2, 3].map((project) => (
+                <Card key={project} className="border-beam overflow-hidden">
+                  <CardHeader className="p-0">
+                    <div className="relative h-48">
+                      <Image
+                        src={`/placeholder.svg?height=200&width=400&text=AR+Project+${project}`}
+                        alt={`AR Project ${project}`}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </CardHeader>
+                  <CardContent className="p-6">
+                    <CardTitle className="mb-2">AR Project {project}</CardTitle>
+                    <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
+                      We created an AR-powered virtual try-on solution for a fashion retailer, resulting in a 40% increase
+                      in online sales and reduced return rates.
+                    </p>
+                    <Button variant="outline" size="sm">
+                      Learn More
+                    </Button>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </div>
         </section>
@@ -92,9 +98,9 @@ export default function Web3IntegrationPage() {
         {/* CTA Section */}
         <section className="py-24">
           <div className="container text-center">
-            <h2 className="text-3xl font-bold mb-4">Ready to Embrace Web3 Technology?</h2>
+            <h2 className="text-3xl font-bold mb-4">Ready to Create Immersive AR Experiences?</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-              Let's explore how Web3 integration can revolutionize your business model and enhance security.
+              Let's discuss how AR can elevate your product presentations and customer interactions.
             </p>
             <Button asChild size="lg" className="button-glow">
               <Link href="/contact">Contact Us for More Information</Link>

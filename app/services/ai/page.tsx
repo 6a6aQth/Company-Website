@@ -129,7 +129,6 @@ export default function AIIntegrationPage() {
                   </Button>
                 </CardContent>
               </Card>
-
             </div>
           </div>
         </section>
