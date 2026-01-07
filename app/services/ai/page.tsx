@@ -109,21 +109,23 @@ export default function AIIntegrationPage() {
                 <CardHeader className="p-0">
                   <div className="relative h-48">
                     <Image
-                      src="/placeholder.svg?height=200&width=400&text=AI+Project+3"
-                      alt="AI Project 3"
+                      src="/images/projects/aurum-ai-firewall.png"
+                      alt="Aurum AI Project"
                       fill
                       className="object-cover"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   </div>
                 </CardHeader>
                 <CardContent className="p-6">
-                  <CardTitle className="mb-2">AI Project 3</CardTitle>
+                  <CardTitle className="mb-2">Aurum AI</CardTitle>
                   <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
-                    We implemented an AI-powered chatbot for a leading e-commerce platform, resulting in a 30% reduction
-                    in customer service inquiries and improved user satisfaction.
+                    An AI web application firewall that provides robust, intelligent protection against web-based threats, ensuring your applications remain secure and operational.
                   </p>
-                  <Button variant="outline" size="sm">
-                    Learn More
+                  <Button variant="outline" size="sm" asChild>
+                    <a href="https://aurum.midascreed.com" target="_blank" rel="noopener noreferrer">
+                      Learn More
+                    </a>
                   </Button>
                 </CardContent>
               </Card>

@@ -67,30 +67,55 @@ export default function WebDesignPage() {
                 </CardContent>
               </Card>
 
-              {[2, 3].map((project) => (
-                <Card key={project} className="border-beam overflow-hidden">
-                  <CardHeader className="p-0">
-                    <div className="relative h-48">
-                      <Image
-                        src={`/placeholder.svg?height=200&width=400&text=Automation+Project+${project}`}
-                        alt={`Automation Project ${project}`}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  </CardHeader>
-                  <CardContent className="p-6">
-                    <CardTitle className="mb-2">Automation Project {project}</CardTitle>
-                    <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
-                      We implemented an automated workflow system for a logistics company, resulting in a 50% reduction in
-                      processing time and improved operational efficiency.
-                    </p>
-                    <Button variant="outline" size="sm">
+              <Card className="border-beam overflow-hidden">
+                <CardHeader className="p-0">
+                  <div className="relative h-48">
+                    <Image
+                      src="/images/projects/greenhouse-solutions.png"
+                      alt="GreenHouse Solutions Website"
+                      fill
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  </div>
+                </CardHeader>
+                <CardContent className="p-6">
+                  <CardTitle className="mb-2">GreenHouse Solutions</CardTitle>
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
+                    A platform developed by MidasCreed that has made it easy for customers to explore our offerings, request quotations, and generate invoices efficiently.
+                  </p>
+                  <Button variant="outline" size="sm" asChild>
+                    <Link href="https://greenhouse.sas.mw/" target="_blank" rel="noopener noreferrer">
                       Learn More
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="border-beam overflow-hidden">
+                <CardHeader className="p-0">
+                  <div className="relative h-48">
+                    <Image
+                      src="/images/projects/nirvana-tours.png"
+                      alt="Nirvana Tours & Travel Website"
+                      fill
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  </div>
+                </CardHeader>
+                <CardContent className="p-6">
+                  <CardTitle className="mb-2">Nirvana Tours & Travel</CardTitle>
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
+                    A modern website that has improved Nirvana's online presence and client engagement.
+                  </p>
+                  <Button variant="outline" size="sm" asChild>
+                    <Link href="https://nirvanttravels.com/" target="_blank" rel="noopener noreferrer">
+                      Learn More
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
