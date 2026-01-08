@@ -61,30 +61,30 @@ export default function Web3IntegrationPage() {
                   </Button>
                 </CardContent>
               </Card>
-              {[2, 3].map((project) => (
-                <Card key={project} className="border-beam overflow-hidden">
-                  <CardHeader className="p-0">
-                    <div className="relative h-48">
-                      <Image
-                        src={`/placeholder.svg?height=200&width=400&text=Web3+Project+${project}`}
-                        alt={`Web3 Project ${project}`}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  </CardHeader>
-                  <CardContent className="p-6">
-                    <CardTitle className="mb-2">Web3 Project {project}</CardTitle>
-                    <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
-                      We developed a decentralized finance (DeFi) platform for a fintech startup, enabling secure and
-                      transparent peer-to-peer transactions and yielding a 50% increase in user engagement.
-                    </p>
-                    <Button variant="outline" size="sm">
+              <Card className="border-beam overflow-hidden">
+                <CardHeader className="p-0">
+                  <div className="relative h-48">
+                    <Image
+                      src="/images/projects/aunamex.png"
+                      alt="Aunamex Project"
+                      fill
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  </div>
+                </CardHeader>
+                <CardContent className="p-6">
+                  <CardTitle className="mb-2">Aunamex</CardTitle>
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
+                    A platform that acts as a gateway to blockchain-powered property investment. Access institutional-grade Build-to-Rent assets through tokenized ownership with transparent yields and instant liquidity.
+                  </p>
+                  <Button variant="outline" size="sm" asChild>
+                    <Link href="#" target="_blank" rel="noopener noreferrer">
                       Learn More
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>

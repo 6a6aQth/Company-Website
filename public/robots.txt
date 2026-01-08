@@ -1,0 +1,28 @@
+# Allow all reputable crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+
+# Disallow non-reputable crawlers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+Sitemap: https://www.midascreed.com/sitemap.xml
