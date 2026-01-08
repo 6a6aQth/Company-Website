@@ -7,7 +7,7 @@ import { TestimonialMarquee } from "@/components/testimonial-marquee"
 
 const services = [
   {
-    title: "AI Solutions",
+    title: "Artificial Intelligence",
     description:
       "We research, design and deploy scalable AI systems studying how AI can be adapted, localized, and scaled for Malawi and the broader African continent.",
     href: "/services/ai",
