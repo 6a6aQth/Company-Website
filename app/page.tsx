@@ -4,6 +4,7 @@ import { HeroScene } from "@/components/hero-scene"
 import { PartnersClients } from "@/components/partners-clients"
 import { ServiceCard } from "@/components/service-card"
 import { TestimonialMarquee } from "@/components/testimonial-marquee"
+import RadialOrbitalTimeline from "@/components/radial-orbital-timeline"
 
 const services = [
   {
@@ -82,6 +83,77 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent pointer-events-none sm:hidden"></div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="relative py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-black" />
+        <div className="container relative">
+          <div className="mx-auto mb-12 max-w-[800px] text-center">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">How We Work</h2>
+            <p className="mt-4 text-gray-400">Our systematic approach to delivering innovative solutions</p>
+          </div>
+          <div className="min-h-[600px]">
+            <RadialOrbitalTimeline
+              timelineData={[
+                {
+                  id: 1,
+                  title: "Discovery",
+                  date: "Phase 1",
+                  content: "We begin by understanding your business needs, challenges, and goals through comprehensive research and stakeholder interviews.",
+                  category: "Research",
+                  icon: "Search",
+                  relatedIds: [2],
+                  status: "completed",
+                  energy: 100,
+                },
+                {
+                  id: 2,
+                  title: "Strategy",
+                  date: "Phase 2",
+                  content: "Our team develops a tailored strategy that aligns with your objectives and leverages the latest technologies.",
+                  category: "Planning",
+                  icon: "Lightbulb",
+                  relatedIds: [1, 3],
+                  status: "completed",
+                  energy: 90,
+                },
+                {
+                  id: 3,
+                  title: "Development",
+                  date: "Phase 3",
+                  content: "We build your solution using agile methodologies, ensuring quality and scalability at every step.",
+                  category: "Build",
+                  icon: "Code",
+                  relatedIds: [2, 4],
+                  status: "in-progress",
+                  energy: 85,
+                },
+                {
+                  id: 4,
+                  title: "Launch",
+                  date: "Phase 4",
+                  content: "We deploy your solution with comprehensive testing and support, ensuring a smooth rollout.",
+                  category: "Deploy",
+                  icon: "Rocket",
+                  relatedIds: [3, 5],
+                  status: "pending",
+                  energy: 75,
+                },
+                {
+                  id: 5,
+                  title: "Optimize",
+                  date: "Phase 5",
+                  content: "Continuous monitoring and optimization to ensure your solution evolves with your business needs.",
+                  category: "Improve",
+                  icon: "CheckCircle",
+                  relatedIds: [4],
+                  status: "pending",
+                  energy: 70,
+                },
+              ]}
+            />
           </div>
         </div>
       </section>
